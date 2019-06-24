@@ -5,6 +5,7 @@
 * sudo apt-get install git
 
 #### Interface Grafica (Recomendado giteye): https://git-scm.com/downloads/guis
+#### Documentacao: https://www.git-scm.com
 
 #### Conectando por chave ssh no Github:
 * ssh-keygen -t rsa -b 4096 -C "email_do_github"
@@ -15,8 +16,6 @@
   * git remote set-url origin git@github.com:andgomes/my-repo.git 
   
 git help <comando>  
-
-HTTPS://www.git-scm.com (documentação) 
 
 Criar diretório, mudar pra o dir e digitar "git init"  [ou]
  
