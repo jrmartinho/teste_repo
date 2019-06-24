@@ -1,15 +1,16 @@
-#Curso Udemi
-===========
+# Curso Udemi
+# ===========
 
-##Git e contribuicoes para projetos Open Source
----------------------------------------------
+## Git e contribuicoes para projetos Open Source
+## ---------------------------------------------
 
 sudo apt-get install git
 
 Interface Grafica (Recomendado giteye):
 https://git-scm.com/downloads/guis
 
-##Gerando chave ssh:
+## Gerando chave ssh:
+
 root@slax:~/teste_repo# ssh-keygen
 ----
 Generating public/private rsa key pair.
@@ -36,7 +37,7 @@ The key's randomart image is:
 ----
 
 
-##Add SSH key na conta do Github. 
+## Add SSH key na conta do Github. 
 Colar conteúdo do arquivo ~/.ssh/id_rsa.pub 
 ssh -T git@github.com (teste) 
 
@@ -49,7 +50,7 @@ git init repo_teste
 ls -al (ver dir .git de configuração do git) 
 
 Criar arquivo README.md (mark down) e digitar "git add arquivo" 
-# - Titulo H1 do html
+[#] - Titulo H1 do html
 
 git commit 
 git config --global user.email "jrmartinho66@gmail.com" 
@@ -65,8 +66,8 @@ git remote add remote URL
 
 Entre no Github inclua repo - nome e descrição, publico,  
 
-Quick setup — if you’ve done this kind of thing before
-------------------------------------------------------
+## Quick setup — if you’ve done this kind of thing before
+## ------------------------------------------------------
 ref https: https://github.com/jrmartinho/teste1_repo.git
 ref ssh: git@github.com:jrmartinho/teste1_repo.git
 
