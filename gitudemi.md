@@ -43,7 +43,7 @@ Entre no Github inclua repo - nome e descrição, publico,
 
 
 
------
+---
 ### Anexo A: Utilizando chave ssh para se conectar ao Github
 
 >ref https: https://github.com/jrmartinho/teste_repo.git  
@@ -90,7 +90,7 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 ---
 #### Anexo C: Markdown dicas:
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
-
+[Ref: https://www.markdownguide.org](https://www.markdownguide.org)  
 * Titulo H1 a H6 - \#, \##, ..., \######
 * **Bold**, _Italico_ - `**Bold**, _Italico_` 
 * Blockquotes - > Paragrafo
@@ -108,6 +108,7 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 * Tag - `Texto[Tag][nome do tag]`  
         `[nome do tag]: [link/endereco do tag]`  
 * Paragrafo `- Hard code (digitar um enter a mais)`  
-		`- Soft code (digitar dois espacos ao fim da linha)`  
+`\ \ \ \ \ \ \ \ \ \ \ \ \ - Soft code (digitar dois espacos ao fim da linha)`  
 
-=====
+---
+---
