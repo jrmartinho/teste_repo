@@ -7,7 +7,7 @@
 #### Interface Grafica (Recomendado giteye): https://git-scm.com/downloads/guis
 
 #### Conectando por chave ssh no Github:
-* ssh-keygen -t rsa -b 4096 -C "email_do_github"
+* ssh-keygen -t rsa -b 4096 -C "email_do_github"  
 > Generating public/private rsa key pair.  
 > Enter file in which to save the key (/root/.ssh/id_rsa):  
 > Created directory '/root/.ssh'.  
@@ -55,7 +55,7 @@ Criar arquivo README.md (mark down) e digitar "git add arquivo"
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 
 * Titulo H1 a H6 - #, ##, ..., ######
-* Bold, Italico - **Bold**, _Italico_ 
+* Bold, Italico - \*\*Bold\*\*, \_Italico\_ 
 * Blockquotes - > Paragrafo
 * Lista e Lista Numerada - * I1    
 <                          * I2   
