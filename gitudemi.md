@@ -10,10 +10,10 @@
 * ssh-keygen -t rsa -b 4096 -C "email_do_github"  
 
 * Add SSH key na conta do Github.  
-  Colar conteúdo do arquivo ~/.ssh/id_rsa.pub  
+  * Colar conteúdo do arquivo ~/.ssh/id_rsa.pub  
 * Testando: ssh -T git@github.com 
 * Trocar a referencia de https por ssh:  
-  git remote set-url origin git@github.com:andgomes/my-repo.git 
+  * git remote set-url origin git@github.com:andgomes/my-repo.git 
 
 
 git help <comando>
@@ -28,25 +28,6 @@ ls -al (ver dir .git de configuração do git)
 
 Criar arquivo README.md (mark down) e digitar "git add arquivo" 
 
-
-#### MarkupDown dicas:
-[Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
-
-* Titulo H1 a H6 - \#, \##, ..., \######
-* Bold, Italico - `**Bold**, _Italico_` 
-* Blockquotes - > Paragrafo
-* Lista e Lista Numerada - * I1    
-`                           * I2   
-`                           * I3  
-* Lista e Lista Numerada - 1. I1  
-`                          2. I2`  
-`                             2.1. I2a`  
-* Imagem - `![Texto alternativo](Arquivo.png)`  
-* Tag - `Texto[Tag][nome do tag]`  
-
-`        [nome do tag]: [link/endereco do tag]`
-* Paragrafo - Hard code (digitar um enter a mais)  
-`            - Soft code (digitar dois espacos ao fim da linha)
 
 
 git commit  
@@ -73,19 +54,19 @@ Entre no Github inclua repo - nome e descrição, publico,
 [`[Git+GitHub]` Evitando Informar Usuário e Senha a cada Push para o GitHub]
 [https://medium.com/@andgomes/git-github-evitando-informar-usu%C3%A1rio-e-senha-a-cada-push-para-o-github-d8edbb5c6de4]
 
-*ssh-keygen -t rsa -b 4096 -C "email_do_github"  
+* ssh-keygen -t rsa -b 4096 -C "email_do_github"  
  Se apenas pressionarmos Enter, o nome e a localização padrão
  serão utilizados(/home/usuário/.ssh/id_rsa).
  Após isso, também será solicitada uma senha para a chave,
  que não precisa ser a mesma senha da conta do GitHub.  
-*ssh-add ~/.ssh/id_rsa  
+* ssh-add ~/.ssh/id_rsa  
  Copie todo o conteúdo do arquivo id_rsa.pub e cole no campo Key em "Add SSH key".  
  Para utilizar a chave SSH automaticamente, é necessário alterar a
  URL HTTPS para uma URL SSH.  
-*git remote -v  
+* git remote -v  
  origin https://github.com/andgomes/my-repo.git (fetch)  
  origin https://github.com/andgomes/my-repo.git (push)  
-*git remote set-url origin git@github.com:andgomes/my-repo.git  
+* git remote set-url origin git@github.com:andgomes/my-repo.git  
 
 
 ### Anexo B: Quick setup — if you’ve done this kind of thing before  
@@ -111,6 +92,20 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 Criando um clone total do repositorio remoto
 git clone https://github.com/jrmartinho/teste1_repo.git
 
--
--
+#### Anexo C: MarkupDown dicas:
+[Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 
+* Titulo H1 a H6 - \#, \##, ..., \######
+* Bold, Italico - `**Bold**, _Italico_` 
+* Blockquotes - > Paragrafo
+* Lista e Lista Numerada - `* I1`    
+                           `* I2`  
+                           `* I3`  
+* Lista e Lista Numerada - `1. I1`  
+                           `2. I2`  
+                              `2.1. I2a`  
+* Imagem - `![Texto alternativo](Arquivo.png)`  
+* Tag - `Texto[Tag][nome do tag]`  
+        `[nome do tag]: [link/endereco do tag]`  
+* Paragrafo `- Hard code (digitar um enter a mais)`  
+            `- Soft code (digitar dois espacos ao fim da linha)`  
