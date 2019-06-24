@@ -19,9 +19,10 @@
 * `git help <comando>`
 * Criar diretório, mudar para o diretorio e digitar `git init`  [ou]  
    `git init repo_teste` estando na raiz do diretorio local do Git
-* Definindo usuario e Email do Git
+* Definindo usuario, email do Git e editor padrao
   * `git config --global user.email "jrmartinho66@gmail.com"`  
   * `git config --global user.name "jrmartinho"`  
+  * `git config --global core.editor gedit`  
   * `git config -l`  
 * `ls -al` (ver diretorio .git de configuração do git) 
 * Criando um clone total do repositorio remoto  
