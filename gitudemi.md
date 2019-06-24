@@ -87,18 +87,20 @@ We recommend every repository include a README, LICENSE, and .gitignore.
  You can initialize this repository with code from a Subversion,  
  Mercurial, or TFS project.  
 
-#### Anexo C: MarkupDown dicas:
+#### Anexo C: Markdown dicas:
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 
 * Titulo H1 a H6 - \#, \##, ..., \######
 * **Bold**, _Italico_ - `**Bold**, _Italico_` 
 * Blockquotes - > Paragrafo
 * Lista e Lista Numerada - `* I1`    
-```                           `* I2`  
-                           `* I3`  ```
+	                           `* I2`  
+	                           `* I3`  
 * Lista e Lista Numerada - `1. I1`  
-```                           `2. I2`  
-                              `2.1. I2a`  ```
+```
+                           `2. I2`  
+                              `2.1. I2a`  
+```
 * Imagem - `![Texto alternativo](Arquivo.png)`  
 * Tag - `Texto[Tag][nome do tag]`  
         `[nome do tag]: [link/endereco do tag]`  
