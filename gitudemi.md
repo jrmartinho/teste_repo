@@ -8,7 +8,9 @@
 
 #### Conectando por chave ssh no Github:
 * ssh-keygen -t rsa -b 4096 -C "email_do_github"  
-> Generating \public/private rsa key pair.  
+> Generating public/private rsa key pair.  
+
+
 > Enter file in which to save the key (\/root/.ssh/id_rsa):  
 > Created directory '\/root/.ssh'.  
 > Enter passphrase (empty for no passphrase):  
@@ -18,7 +20,7 @@
 > The key fingerprint is:  
 > SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root\@slax  
 > The key's randomart image is:  
-> +---[RSA 2048]----+  
+> +---\[RSA 2048]----+  
 > |*B&&XX..         |  
 > |==BOE.B o        |  
 > |.*+o = =         |  
@@ -28,7 +30,7 @@
 > |    o .          |  
 > |   .             |  
 > |                 |  
-> +----[SHA256]-----+  
+> +----\[SHA256]-----+  
 > ----  
 
 * Add SSH key na conta do Github.  
