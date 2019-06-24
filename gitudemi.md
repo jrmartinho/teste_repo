@@ -31,6 +31,7 @@
   * Mudar para o diretorio e criar arquivo README.md (markdown - anexo C)
   * `git add README.md` [ou] `git add .`
   * `git commit` e editar mensagem do commit [ou] `git commit -m "mensagem do commit"`  
+  * `git push`  
 -----
 * Comandos para verificacao: `git status` e `git log`  
 -----
@@ -90,14 +91,14 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 
 * Titulo H1 a H6 - \#, \##, ..., \######
-* Bold, Italico - `**Bold**, _Italico_` 
+* **Bold**, _Italico_ - `**Bold**, _Italico_` 
 * Blockquotes - > Paragrafo
 * Lista e Lista Numerada - `* I1`    
-                           `* I2`  
-                           `* I3`  
+```                           `* I2`  
+                           `* I3`  ```
 * Lista e Lista Numerada - `1. I1`  
-                           `2. I2`  
-                              `2.1. I2a`  
+```                           `2. I2`  
+                              `2.1. I2a`  ```
 * Imagem - `![Texto alternativo](Arquivo.png)`  
 * Tag - `Texto[Tag][nome do tag]`  
         `[nome do tag]: [link/endereco do tag]`  
