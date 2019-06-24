@@ -18,8 +18,8 @@
 > The key fingerprint is:  
 > SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root@slax  
 > The key's randomart image is:  
+> +---[RSA 2048]----+  
 
-> +---\[RSA 2048]----+  
 > |*B&&XX..         |  
 > |==BOE.B o        |  
 > |.*+o = =         |  
