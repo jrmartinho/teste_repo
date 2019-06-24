@@ -8,29 +8,6 @@
 
 #### Conectando por chave ssh no Github:
 * ssh-keygen -t rsa -b 4096 -C "email_do_github"  
-> Generating public/private rsa key pair.  
-> Enter file in which to save the key (/root/.ssh/id_rsa):  
-> Created directory '/root/.ssh'.  
-> Enter passphrase (empty for no passphrase):  
-> Enter same passphrase again:  
-> Your identification has been saved in /root/.ssh/id_rsa.  
-> Your public key has been saved in /root/.ssh/id_rsa.pub.  
-> The key fingerprint is:  
-> SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root@slax  
-> The key's randomart image is:  
-> `+---[RSA 2048]----+`  
-> `|*B&&XX\..        |`  
-> `|==BOE.B o        |`  
-> `|.*+o = =         |`  
-> `|. +.. .          |`  
-> `|  ...   S        |`  
-> `|   o . o         |`  
-> `|    o .          |`  
-> `|   .             |`  
-> `|                 |`  
-> `+----[SHA256]-----+`  
-> `----`  
-
 
 * Add SSH key na conta do Github.  
   Colar conteúdo do arquivo ~/.ssh/id_rsa.pub  
@@ -56,20 +33,20 @@ Criar arquivo README.md (mark down) e digitar "git add arquivo"
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 
 * Titulo H1 a H6 - \#, \##, ..., \######
-* Bold, Italico - \*\*Bold\*\*, \_Italico\_ 
+* Bold, Italico - `**Bold**, _Italico_` 
 * Blockquotes - > Paragrafo
 * Lista e Lista Numerada - * I1    
-<                          * I2   
-<                             * I3  
+`                           * I2   
+`                           * I3  
 * Lista e Lista Numerada - 1. I1  
-\                          2. I2  
-\                             2.1. I2a  
-* Imagem - \![Texto alternativo](Arquivo.png)
-* Tag - \Texto[Tag][nome do tag]  
+`                          2. I2`  
+`                             2.1. I2a`  
+* Imagem - `![Texto alternativo](Arquivo.png)`  
+* Tag - `Texto[Tag][nome do tag]`  
 
-\        [nome do tag]: [link/endereco do tag]
+`        [nome do tag]: [link/endereco do tag]`
 * Paragrafo - Hard code (digitar um enter a mais)  
-            - Soft code (digitar dois espacos ao fim da linha)
+`            - Soft code (digitar dois espacos ao fim da linha)
 
 
 git commit  
@@ -87,46 +64,49 @@ git remote add remote URL
 
 Entre no Github inclua repo - nome e descrição, publico,  
 
-Quick setup — if you’ve done this kind of thing before  
-------------------------------------------------------
-ref https: https://github.com/jrmartinho/teste_repo.git  
-ref ssh: git@github.com:jrmartinho/teste_repo.git  
 
-[Git+GitHub] Evitando Informar Usuário e Senha a cada Push para o GitHub  
-https://medium.com/@andgomes/git-github-evitando-informar-usu%C3%A1rio-e-senha-a-cada-push-para-o-github-d8edbb5c6de4
+### Anexo A: Utilizando chave ssh para se conectar ao Github
 
-ssh-keygen -t rsa -b 4096 -C "email_do_github"
- Se apenas pressionarmos Enter, o nome e a localização padrão serão
- utilizados(/home/usuário/.ssh/id_rsa). Após isso, também será solicitada
- uma senha para a chave, que não precisa ser a mesma senha da conta do GitHub.
-ssh-add ~/.ssh/id_rsa
- copie todo o conteúdo do arquivo id_rsa.pub e cole no campo Key em "Add SSH key".
+>ref https: https://github.com/jrmartinho/teste_repo.git  
+>ref ssh: git@github.com:jrmartinho/teste_repo.git  
+
+[`[Git+GitHub]` Evitando Informar Usuário e Senha a cada Push para o GitHub]
+[https://medium.com/@andgomes/git-github-evitando-informar-usu%C3%A1rio-e-senha-a-cada-push-para-o-github-d8edbb5c6de4]
+
+*ssh-keygen -t rsa -b 4096 -C "email_do_github"  
+ Se apenas pressionarmos Enter, o nome e a localização padrão
+ serão utilizados(/home/usuário/.ssh/id_rsa).
+ Após isso, também será solicitada uma senha para a chave,
+ que não precisa ser a mesma senha da conta do GitHub.  
+*ssh-add ~/.ssh/id_rsa  
+ Copie todo o conteúdo do arquivo id_rsa.pub e cole no campo Key em "Add SSH key".  
  Para utilizar a chave SSH automaticamente, é necessário alterar a
- URL HTTPS para uma URL SSH.
-git remote -v
- origin https://github.com/andgomes/my-repo.git (fetch)
- origin https://github.com/andgomes/my-repo.git (push)
-git remote set-url origin git@github.com:andgomes/my-repo.git
+ URL HTTPS para uma URL SSH.  
+*git remote -v  
+ origin https://github.com/andgomes/my-repo.git (fetch)  
+ origin https://github.com/andgomes/my-repo.git (push)  
+*git remote set-url origin git@github.com:andgomes/my-repo.git  
 
--
-Get started by creating a new file or uploading an existing file.
-We recommend every repository include a README, LICENSE, and .gitignore.
 
-…or create a new repository on the command line
- echo "# teste_repo" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:jrmartinho/teste1_repo.git
-git push -u origin master
+### Anexo B: Quick setup — if you’ve done this kind of thing before  
+Get started by creating a new file or uploading an existing file.  
+We recommend every repository include a README, LICENSE, and .gitignore.  
 
-…or push an existing repository from the command line
- git remote add origin git@github.com:jrmartinho/teste1_repo.git
-git push -u origin master
+…or create a new repository on the command line  
+ echo "# teste_repo" >> README.md  
+ git init  
+ git add README.md  
+ git commit -m "first commit"  
+ git remote add origin git@github.com:jrmartinho/teste_repo.git  
+ git push -u origin master  
 
-…or import code from another repository
-You can initialize this repository with code from a Subversion,
- Mercurial, or TFS project.
+…or push an existing repository from the command line  
+ git remote add origin git@github.com:jrmartinho/teste1_repo.git  
+ git push -u origin master  
+
+…or import code from another repository  
+ You can initialize this repository with code from a Subversion,  
+ Mercurial, or TFS project.  
 
 Criando um clone total do repositorio remoto
 git clone https://github.com/jrmartinho/teste1_repo.git
