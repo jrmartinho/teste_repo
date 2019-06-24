@@ -22,7 +22,7 @@
 * Definindo usuario, email do Git e editor padrao
   * `git config --global user.email "jrmartinho66@gmail.com"`  
   * `git config --global user.name "jrmartinho"`  
-  * `git config --global core.editor gedit`  
+  * `git config --global core.editor leafpad`  
   * `git config -l`  
 * `ls -al` (ver diretorio .git de configuração do git) 
 * Criando um clone total do repositorio remoto  
@@ -34,8 +34,16 @@
   * `git commit` e editar mensagem do commit [ou] `git commit -m "mensagem do commit"`  
   * `git push`  
 ---
-* Comandos para verificacao: `git status` e `git log`  
+* Comandos para verificacao:
+ * `git status` e `git log`
+ * `git diff HEAD~1` - alteracoes do ultimo commit 
 ---
+* Estados dos arquivos:
+ * Nao monitorados (untracked)
+ * Modifcado (modified)
+ * Preparado (staged)
+ * Consolidado (commited)
+--- 
 
 git remote add remote URL  
 Entre no Github inclua repo - nome e descrição, publico,  
