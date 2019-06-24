@@ -12,6 +12,7 @@ sudo apt-get install git
 ssh-keygen
 
 > Generating public/private rsa key pair.
+
 > Enter file in which to save the key (/root/.ssh/id_rsa): 
 
 > Created directory '/root/.ssh'.
@@ -75,47 +76,46 @@ Criar arquivo README.md (mark down) e digitar "git add arquivo"
 
 
 #### MarkupDown dicas:
-#### Titulo H1 do html [#### Titulo H1 do html]
-*Bold* [*Bold*] **Italico** [**Italico**]
-[> BlockQuotes]
-> Blockquotes
-> Blockquotes1
+[Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 
-[* List]
-* Item1
-* Item2
-   * Item2a
-   * Item2b
+* Titulo H1 a H6 - #, ##, ..., ######
+* Bold, Italico - **Bold**, _Italico_ 
+* Blockquotes - > Paragrafo
+* Lista e Lista Numerada - * I1    
+<                          * I2   
+<                             * I3  
+* Lista e Lista Numerada - 1. I1  
+<                          2. I2  
+<                             2.1. I2a  
+* Imagem - ![Texto alternativo](Arquivo.png)
+* Tag - Texto[Tag][nome do tag]  
 
-[1. List Ordered    ]
-[    1. List Ordered]
-1. Item1
-1. Item2
-   1. Item2a
-   1. Item2b
-  
+        [nome do tag]: [link/endereco do tag]
+* Paragrafo - Hard code (digitar um enter a mais)  
+            - Soft code (digitar dois espacos ao fim da linha)
 
-git commit
-git config --global user.email "jrmartinho66@gmail.com"
-git config --global user.name "jrmartinho"
-git config -l
-git commit [ou]
-git commit -m "mensagem do commit"
-Editar o título da alteração e salvar 
 
-git status 
-git log 
+git commit  
+git config --global user.email "jrmartinho66@gmail.com"  
+git config --global user.name "jrmartinho"  
+git config -l  
+git commit [ou]  
+git commit -m "mensagem do commit"  
+Editar o título da alteração e salvar  
 
-git remote add remote URL 
+git status  
+git log  
+
+git remote add remote URL  
 
 Entre no Github inclua repo - nome e descrição, publico,  
 
-Quick setup — if you’ve done this kind of thing before
+Quick setup — if you’ve done this kind of thing before  
 ------------------------------------------------------
-ref https: https://github.com/jrmartinho/teste_repo.git
-ref ssh: git@github.com:jrmartinho/teste_repo.git
+ref https: https://github.com/jrmartinho/teste_repo.git  
+ref ssh: git@github.com:jrmartinho/teste_repo.git  
 
-[Git+GitHub] Evitando Informar Usuário e Senha a cada Push para o GitHub
+[Git+GitHub] Evitando Informar Usuário e Senha a cada Push para o GitHub  
 https://medium.com/@andgomes/git-github-evitando-informar-usu%C3%A1rio-e-senha-a-cada-push-para-o-github-d8edbb5c6de4
 
 ssh-keygen -t rsa -b 4096 -C "email_do_github"
