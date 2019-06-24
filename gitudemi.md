@@ -2,65 +2,41 @@
 #### (Git e contribuicoes para projetos Open Source)
 -----
 #### Instalando:
-
-sudo apt-get install git
+* sudo apt-get install git
 
 #### Interface Grafica (Recomendado giteye): https://git-scm.com/downloads/guis
 
-#### Gerando chave ssh:
+#### Conectando por chave ssh no Github:
+* ssh-keygen -t rsa -b 4096 -C "email_do_github"
+> Generating public/private rsa key pair.  
+> Enter file in which to save the key (/root/.ssh/id_rsa):  
+> Created directory '/root/.ssh'.  
+> Enter passphrase (empty for no passphrase):  
+> Enter same passphrase again:  
+> Your identification has been saved in /root/.ssh/id_rsa.  
+> Your public key has been saved in /root/.ssh/id_rsa.pub.  
+> The key fingerprint is:  
+> SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root@slax  
+> The key's randomart image is:  
+> +---[RSA 2048]----+  
+> |*B&&XX..         |  
+> |==BOE.B o        |  
+> |.*+o = =         |  
+> |. +.. .          |  
+> |  ...   S        |  
+> |   o . o         |  
+> |    o .          |  
+> |   .             |  
+> |                 |  
+> +----[SHA256]-----+  
+> ----  
 
-ssh-keygen
+* Add SSH key na conta do Github.  
+  Colar conteúdo do arquivo ~/.ssh/id_rsa.pub  
+* Testando: ssh -T git@github.com 
+* Trocar a referencia de https por ssh:  
+  git remote set-url origin git@github.com:andgomes/my-repo.git 
 
-> Generating public/private rsa key pair.
-
-> Enter file in which to save the key (/root/.ssh/id_rsa): 
-
-> Created directory '/root/.ssh'.
-
-> Enter passphrase (empty for no passphrase): 
-
-> Enter same passphrase again:
-
-> Your identification has been saved in /root/.ssh/id_rsa.
-
-> Your public key has been saved in /root/.ssh/id_rsa.pub.
-
-> The key fingerprint is:
-
-> SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root@slax
-
-> The key's randomart image is:
-
-> +---[RSA 2048]----+
-
-> |*B&&XX..         |
-
-> |==BOE.B o        |
-
-> |.*+o = =         |
-
-> |. +.. .          |
-
-> |  ...   S        |
-
-> |   o . o         |
-
-> |    o .          |
-
-> |   .             |
-
-> |                 |
-
-> +----[SHA256]-----+
-
-> ----
-
-
-#### Add SSH key na conta do Github. 
-
-Colar conteúdo do arquivo ~/.ssh/id_rsa.pub
- 
-ssh -T git@github.com (teste) 
 
 git help <comando>
  
@@ -136,7 +112,7 @@ Get started by creating a new file or uploading an existing file.
 We recommend every repository include a README, LICENSE, and .gitignore.
 
 …or create a new repository on the command line
- echo "# teste1_repo" >> README.md
+ echo "# teste_repo" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
