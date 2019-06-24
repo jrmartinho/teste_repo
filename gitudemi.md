@@ -108,7 +108,7 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 * Tag - `Texto[Tag][nome do tag]`  
         `[nome do tag]: [link/endereco do tag]`  
 * Paragrafo `- Hard code (digitar um enter a mais)`  
-`\ \ \ \ \ \ \ \ \ \ \ \ \ - Soft code (digitar dois espacos ao fim da linha)`  
+`            - Soft code (digitar dois espacos ao fim da linha)`  
 
 ---
 ---
