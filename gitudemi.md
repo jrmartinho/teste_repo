@@ -7,17 +7,15 @@
 #### Interface Grafica (Recomendado giteye): https://git-scm.com/downloads/guis
 
 #### Conectando por chave ssh no Github:
-* ssh-keygen -t rsa -b 4096 -C "email_do_github"  
-
-* Add SSH key na conta do Github.  
-  * Colar conteúdo do arquivo ~/.ssh/id_rsa.pub  
-* Testando: ssh -T git@github.com 
-* Trocar a referencia de https por ssh:  
+* ssh-keygen -t rsa -b 4096 -C "email_do_github"
+* Add SSH key na conta do Github.
+  * Colar conteúdo do arquivo ~/.ssh/id_rsa.pub
+* Testando: ssh -T git@github.com
+* Trocar a referencia de https por ssh:
   * git remote set-url origin git@github.com:andgomes/my-repo.git 
+  
+git help <comando>  
 
-
-git help <comando>
- 
 HTTPS://www.git-scm.com (documentação) 
 
 Criar diretório, mudar pra o dir e digitar "git init"  [ou]
