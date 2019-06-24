@@ -10,49 +10,72 @@ sudo apt-get install git
 
 ssh-keygen
 
-Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa): 
-Created directory '/root/.ssh'.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again:
-Your identification has been saved in /root/.ssh/id_rsa.
-Your public key has been saved in /root/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root@slax
-The key's randomart image is:
-+---[RSA 2048]----+
-|*B&&XX..         |
-|==BOE.B o        |
-|.*+o = =         |
-|. +.. .          |
-|  ...   S        |
-|   o . o         |
-|    o .          |
-|   .             |
-|                 |
-+----[SHA256]-----+
-----
+> Generating public/private rsa key pair.
+> Enter file in which to save the key (/root/.ssh/id_rsa): 
+> Created directory '/root/.ssh'.
+> Enter passphrase (empty for no passphrase): 
+> Enter same passphrase again:
+> Your identification has been saved in /root/.ssh/id_rsa.
+> Your public key has been saved in /root/.ssh/id_rsa.pub.
+> The key fingerprint is:
+> SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root@slax
+> The key's randomart image is:
+> +---[RSA 2048]----+
+> |*B&&XX..         |
+> |==BOE.B o        |
+> |.*+o = =         |
+> |. +.. .          |
+> |  ...   S        |
+> |   o . o         |
+> |    o .          |
+> |   .             |
+> |                 |
+> +----[SHA256]-----+
+> ----
 
 
 #### Add SSH key na conta do Github. 
--
-Colar conteúdo do arquivo ~/.ssh/id_rsa.pub 
+--
+Colar conteúdo do arquivo ~/.ssh/id_rsa.pub
+ 
 ssh -T git@github.com (teste) 
 
-git help <comando> 
+git help <comando>
+ 
 HTTPS://www.git-scm.com (documentação) 
 
-Criar diretório, mudar pra o dir e digitar "git init"  <<ou>> 
+Criar diretório, mudar pra o dir e digitar "git init"  [ou]
+ 
 git init repo_teste 
 
 ls -al (ver dir .git de configuração do git) 
 
 Criar arquivo README.md (mark down) e digitar "git add arquivo" 
 
-#### Titulo H1 do html
 
-git commit 
-git config --global user.email "jrmartinho66@gmail.com" 
+#### MarkupDown dicas:
+#### Titulo H1 do html [#### Titulo H1 do html]
+*Bold* [*Bold*] **Italico** [**Italico**]
+[> BlockQuotes]
+> Blockquotes
+> Blockquotes1
+
+[* List]
+* Item1
+* Item2
+   * Item2a
+   * Item2b
+
+[1. List Ordered    ]
+[    1. List Ordered]
+1. Item1
+1. Item2
+   1. Item2a
+   1. Item2b
+  
+
+git commit
+git config --global user.email "jrmartinho66@gmail.com"
 git config --global user.name "jrmartinho"
 git config -l
 git commit [ou]
