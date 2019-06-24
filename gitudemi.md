@@ -48,8 +48,8 @@ Entre no Github inclua repo - nome e descrição, publico,
 >ref https: https://github.com/jrmartinho/teste_repo.git  
 >ref ssh: git@github.com:jrmartinho/teste_repo.git  
 
-[`[Git+GitHub]` Evitando Informar Usuário e Senha a cada Push para o GitHub]
-[https://medium.com/@andgomes/git-github-evitando-informar-usu%C3%A1rio-e-senha-a-cada-push-para-o-github-d8edbb5c6de4]
+[\[Git+GitHub\] Evitando Informar Usuário e Senha a cada Push para o GitHub]
+(https://medium.com/@andgomes/git-github-evitando-informar-usu%C3%A1rio-e-senha-a-cada-push-para-o-github-d8edbb5c6de4)
 
 * ssh-keygen -t rsa -b 4096 -C "email_do_github"  
  Se apenas pressionarmos Enter, o nome e a localização padrão
