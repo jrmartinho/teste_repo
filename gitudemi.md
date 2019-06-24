@@ -32,9 +32,9 @@
   * `git add README.md` [ou] `git add .`
   * `git commit` e editar mensagem do commit [ou] `git commit -m "mensagem do commit"`  
   * `git push`  
------
+---
 * Comandos para verificacao: `git status` e `git log`  
------
+---
 
 git remote add remote URL  
 Entre no Github inclua repo - nome e descrição, publico,  
@@ -43,7 +43,7 @@ Entre no Github inclua repo - nome e descrição, publico,
 
 
 
-
+-----
 ### Anexo A: Utilizando chave ssh para se conectar ao Github
 
 >ref https: https://github.com/jrmartinho/teste_repo.git  
@@ -66,7 +66,7 @@ Entre no Github inclua repo - nome e descrição, publico,
  origin https://github.com/andgomes/my-repo.git (push)  
 * git remote set-url origin git@github.com:andgomes/my-repo.git  
 
-
+---
 ### Anexo B: Quick setup — if you’ve done this kind of thing before  
 Get started by creating a new file or uploading an existing file.  
 We recommend every repository include a README, LICENSE, and .gitignore.  
@@ -87,6 +87,7 @@ We recommend every repository include a README, LICENSE, and .gitignore.
  You can initialize this repository with code from a Subversion,  
  Mercurial, or TFS project.  
 
+---
 #### Anexo C: Markdown dicas:
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 
@@ -107,4 +108,6 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 * Tag - `Texto[Tag][nome do tag]`  
         `[nome do tag]: [link/endereco do tag]`  
 * Paragrafo `- Hard code (digitar um enter a mais)`  
-            `- Soft code (digitar dois espacos ao fim da linha)`  
+		`- Soft code (digitar dois espacos ao fim da linha)`  
+
+=====
