@@ -1,7 +1,7 @@
-## Curso Udemi
+## Curso Udemi #### (Git e contribuicoes para projetos Open Source)
 -----
-#### Git e contribuicoes para projetos Open Source
---
+#### Instalando:
+
 sudo apt-get install git
 
 #### Interface Grafica (Recomendado giteye): https://git-scm.com/downloads/guis
@@ -11,31 +11,52 @@ sudo apt-get install git
 ssh-keygen
 
 > Generating public/private rsa key pair.
+
 > Enter file in which to save the key (/root/.ssh/id_rsa): 
+
 > Created directory '/root/.ssh'.
+
 > Enter passphrase (empty for no passphrase): 
+
 > Enter same passphrase again:
+
 > Your identification has been saved in /root/.ssh/id_rsa.
+
 > Your public key has been saved in /root/.ssh/id_rsa.pub.
+
 > The key fingerprint is:
+
 > SHA256:puAGUY08cdxygrfQSBoUpZD4DFoGF4JFYSXJeUFyuBc root@slax
+
 > The key's randomart image is:
+
 > +---[RSA 2048]----+
+
 > |*B&&XX..         |
+
 > |==BOE.B o        |
+
 > |.*+o = =         |
+
 > |. +.. .          |
+
 > |  ...   S        |
+
 > |   o . o         |
+
 > |    o .          |
+
 > |   .             |
+
 > |                 |
+
 > +----[SHA256]-----+
+
 > ----
 
 
 #### Add SSH key na conta do Github. 
---
+
 Colar conteúdo do arquivo ~/.ssh/id_rsa.pub
  
 ssh -T git@github.com (teste) 
