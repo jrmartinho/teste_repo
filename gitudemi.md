@@ -93,15 +93,15 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 * Titulo H1 a H6 - \#, \##, ..., \######
 * **Bold**, _Italico_ - `**Bold**, _Italico_` 
 * Blockquotes - > Paragrafo
-* Lista e Lista Numerada - `* I1`
+* Lista e Lista Numerada
 ```
-                            * I2
-                            * I3
-```
-* Lista e Lista Numerada - `1. I1`
-```
-                         2. I2  
-                           2.1. I2a  
+`  * I1`
+`  * I2`
+`  * I3`
+
+`   1. I1`  
+`   2. I2`  
+`   2.1. I2a`  
 ```
 * Imagem - `![Texto alternativo](Arquivo.png)`  
 * Tag - `Texto[Tag][nome do tag]`  
