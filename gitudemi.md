@@ -2,35 +2,37 @@
 #### (Git e contribuicoes para projetos Open Source)
 -----
 #### Instalando:
-* sudo apt-get install git
+* `sudo apt-get install git`
 
 #### Interface Grafica (Recomendado giteye): https://git-scm.com/downloads/guis
 #### Documentacao: https://www.git-scm.com
 
 #### Conectando por chave ssh no Github:
-* ssh-keygen -t rsa -b 4096 -C "email_do_github"
+* `ssh-keygen -t rsa -b 4096 -C "email_do_github"`
 * Add SSH key na conta do Github.
-  * Colar conteúdo do arquivo ~/.ssh/id_rsa.pub
-* Testando: ssh -T git@github.com
+  * Colar conteúdo do arquivo ~/.ssh/id_rsa.pub no campo Key em "Add SSH key" no servidor Github.
+* Testando: `ssh -T git@github.com`
 * Trocar a referencia de https por ssh:
-  * git remote set-url origin git@github.com:andgomes/my-repo.git 
+  * `git remote set-url origin git@github.com:jrmartinho/teste_repo.git` 
   
-git help <comando>  
+#### Utilizando a interface `Git`
+* `git help <comando>`
+* Criar diretório, mudar para o diretorio e digitar `git init`  [ou]  
+  `git init repo_teste` estando na raiz do diretorio local do Git
+* Definindo usuario e Email do Git
+  * `git config --global user.email "jrmartinho66@gmail.com"`  
+  * `git config --global user.name "jrmartinho"`  
+  * `git config -l`  
+* `ls -al` (ver diretorio .git de configuração do git) 
+* Criando um clone total do repositorio remoto  
+  * `git clone https://github.com/jrmartinho/teste_repo.git`
 
-Criar diretório, mudar pra o dir e digitar "git init"  [ou]
- 
-git init repo_teste 
-
-ls -al (ver dir .git de configuração do git) 
 
 Criar arquivo README.md (mark down) e digitar "git add arquivo" 
 
 
 
 git commit  
-git config --global user.email "jrmartinho66@gmail.com"  
-git config --global user.name "jrmartinho"  
-git config -l  
 git commit [ou]  
 git commit -m "mensagem do commit"  
 Editar o título da alteração e salvar  
@@ -85,9 +87,6 @@ We recommend every repository include a README, LICENSE, and .gitignore.
 …or import code from another repository  
  You can initialize this repository with code from a Subversion,  
  Mercurial, or TFS project.  
-
-Criando um clone total do repositorio remoto
-git clone https://github.com/jrmartinho/teste1_repo.git
 
 #### Anexo C: MarkupDown dicas:
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
