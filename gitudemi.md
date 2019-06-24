@@ -1,17 +1,16 @@
-#Curso Udemi
-===========
+## Curso Udemi
+-
 
-##Git e contribuicoes para projetos Open Source
----------------------------------------------
-
+#### Git e contribuicoes para projetos Open Source
+-
 sudo apt-get install git
 
-Interface Grafica (Recomendado giteye):
+**Interface Grafica (Recomendado giteye):**
 https://git-scm.com/downloads/guis
 
-##Gerando chave ssh:
+#### Gerando chave ssh:
 root@slax:~/teste_repo# ssh-keygen
-----
+-
 Generating public/private rsa key pair.
 Enter file in which to save the key (/root/.ssh/id_rsa): 
 Created directory '/root/.ssh'.
@@ -36,7 +35,8 @@ The key's randomart image is:
 ----
 
 
-##Add SSH key na conta do Github. 
+#### Add SSH key na conta do Github. 
+-
 Colar conteúdo do arquivo ~/.ssh/id_rsa.pub 
 ssh -T git@github.com (teste) 
 
@@ -49,12 +49,14 @@ git init repo_teste
 ls -al (ver dir .git de configuração do git) 
 
 Criar arquivo README.md (mark down) e digitar "git add arquivo" 
-# - Titulo H1 do html
+
+#### Titulo H1 do html
 
 git commit 
 git config --global user.email "jrmartinho66@gmail.com" 
-git config --global user.name "jrmartinho" 
-git commit <<ou>>
+git config --global user.name "jrmartinho"
+git config -l
+git commit [ou]
 git commit -m "mensagem do commit"
 Editar o título da alteração e salvar 
 
@@ -70,10 +72,23 @@ Quick setup — if you’ve done this kind of thing before
 ref https: https://github.com/jrmartinho/teste_repo.git
 ref ssh: git@github.com:jrmartinho/teste_repo.git
 
-<b>Git+GitHub] Evitando Informar Usuário e Senha a cada Push para o GitHub</b></n>
+[Git+GitHub] Evitando Informar Usuário e Senha a cada Push para o GitHub
 https://medium.com/@andgomes/git-github-evitando-informar-usu%C3%A1rio-e-senha-a-cada-push-para-o-github-d8edbb5c6de4
 
+ssh-keygen -t rsa -b 4096 -C "email_do_github"
+ Se apenas pressionarmos Enter, o nome e a localização padrão serão
+ utilizados(/home/usuário/.ssh/id_rsa). Após isso, também será solicitada
+ uma senha para a chave, que não precisa ser a mesma senha da conta do GitHub.
+ssh-add ~/.ssh/id_rsa
+ copie todo o conteúdo do arquivo id_rsa.pub e cole no campo Key em "Add SSH key".
+ Para utilizar a chave SSH automaticamente, é necessário alterar a
+ URL HTTPS para uma URL SSH.
+git remote -v
+ origin https://github.com/andgomes/my-repo.git (fetch)
+ origin https://github.com/andgomes/my-repo.git (push)
+git remote set-url origin git@github.com:andgomes/my-repo.git
 
+-
 Get started by creating a new file or uploading an existing file.
 We recommend every repository include a README, LICENSE, and .gitignore.
 
@@ -96,6 +111,6 @@ You can initialize this repository with code from a Subversion,
 Criando um clone total do repositorio remoto
 git clone https://github.com/jrmartinho/teste1_repo.git
 
-
-
+-
+-
 
