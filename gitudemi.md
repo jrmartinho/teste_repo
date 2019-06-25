@@ -51,6 +51,10 @@
   * `git checkout d6a21b3`
 * Baixando as alteracoes do repositorio remoto do ultimo commit para o local
   * `git checkout master`
+* Desfazer alteracoes correntes no local
+  * `git diff` para ver modificacoes
+  * `git checkout -- arquivo` ou `git checkout -- .` para todos
+
   
 --- 
 
