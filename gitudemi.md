@@ -25,9 +25,6 @@
   * `git config --global core.editor leafpad`  
   * `git config -l`  
 * `ls -al` (ver diretorio .git de configuração do git) 
-* Criando um clone total do repositorio remoto  
-  * `git clone https://github.com/jrmartinho/teste_repo.git`  
-[ou]
 * Criar arquivos iniciais:
   * Mudar para o diretorio e criar arquivo README.md (markdown - anexo C)
   * `git add README.md` [ou] `git add .`
@@ -43,6 +40,11 @@
  * Modifcado (modified)
  * Preparado (staged)
  * Consolidado (commited)
+--- 
+* Criando um clone total do repositorio remoto  
+  * `git clone https://github.com/jrmartinho/teste_repo.git`  
+  * `git remote -v` 
+
 --- 
 
 git remote add remote URL  
