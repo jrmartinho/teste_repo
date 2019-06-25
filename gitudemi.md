@@ -54,9 +54,12 @@
 * Desfazer alteracoes correntes no local
   * `git diff` para ver modificacoes
   * `git checkout -- arquivo` ou `git checkout -- .` para todos
+---
+## nao funcionou
 * Desfazer alteracoes do ultimo commit enviado ao remoto
   * `git checkout HEAD -- arquivo` ou `git checkout HEAD -- .` para todos
-
+* Usei `git checkout num.commit arquivo`
+* `git add .`,`git commit -m "retornando ao commit num.commit"`,`git push` 
   
 --- 
 
