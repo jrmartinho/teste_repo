@@ -14,7 +14,11 @@
 - [x] - selecao n6
 
 1. Linha 1
-1. Linha 2
-  1.1. Linha 2.1
-  1.1. Linha 2.2
-  1.1. Linha 2.3
+1. Linha 2  
+  1.2. Linha 2.1  
+  1.2. Linha 2.2  
+  1.2. Linha 2.3  
+1. Linha 3  
+  1.2. Linha 2.1  
+  1.2. Linha 2.2  
+  1.2. Linha 2.3  
