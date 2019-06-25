@@ -54,6 +54,8 @@
 * Desfazer alteracoes correntes no local
   * `git diff` para ver modificacoes
   * `git checkout -- arquivo` ou `git checkout -- .` para todos
+* Desfazer alteracoes do ultimo commit enviado ao remoto
+  * `git checkout HEAD -- arquivo` ou `git checkout HEAD -- .` para todos
 
   
 --- 
