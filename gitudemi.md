@@ -41,8 +41,11 @@
  * Preparado (staged)
  * Consolidado (commited)
 --- 
-* Criando um clone total do repositorio remoto  
+* Criando um clone total do repositorio remoto no local  
   * `git clone https://github.com/jrmartinho/teste_repo.git`  
+  * `git remote -v` 
+* Pegando as alteracoes do repositorio remoto para o local  
+  * `git pull https://github.com/jrmartinho/teste_repo.git`  
   * `git remote -v` 
 
 --- 
