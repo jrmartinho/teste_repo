@@ -44,10 +44,14 @@
 * Criando um clone total do repositorio remoto no local  
   * `git clone https://github.com/jrmartinho/teste_repo.git`  
   * `git remote -v` 
-* Pegando as alteracoes do repositorio remoto para o local  
+* Baixando as alteracoes do repositorio remoto para o local  
   * `git pull https://github.com/jrmartinho/teste_repo.git`  
-  * `git remote -v` 
-
+* Baixando as alteracoes do repositorio remoto de um commit especifico para o local
+  * `git log`  
+  * `git checkout d6a21b3`
+* Baixando as alteracoes do repositorio remoto do ultimo commit para o local
+  * `git checkout master`
+  
 --- 
 
 git remote add remote URL  
