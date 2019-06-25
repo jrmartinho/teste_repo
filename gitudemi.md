@@ -57,7 +57,13 @@
 * Desfazer alteracoes do ultimo commit enviado ao remoto
   * `git checkout HEAD -- arquivo` ou `git checkout HEAD -- .` para todos
 
-  
+*
+*
+*
+*
+*
+*
+
 --- 
 
 git remote add remote URL  
