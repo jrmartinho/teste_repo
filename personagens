@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿personagem1
+=======
+personagem1
+>>>>>>> d0457d5... Rebase 11,12,17
 personagem2
 personagem3
 personagem4
@@ -6,7 +10,12 @@ personagem6
 personagem7
 personagem10
 personagem11 novaBranch
+<<<<<<< HEAD
 personagem12 _novaBranch
 personagem17 novaBranch gitb para merge com master
 
 
+=======
+personagem12
+personagem17 novaBranch gitb para merge com master
+>>>>>>> d0457d5... Rebase 11,12,17
