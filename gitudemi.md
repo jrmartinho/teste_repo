@@ -35,11 +35,11 @@
  * `git status` e `git log`
  * `git diff HEAD~1` - alteracoes do ultimo commit 
 ---
-* Estados dos arquivos:
- * Nao monitorados (untracked)
- * Modifcado (modified)
- * Preparado (staged)
- * Consolidado (commited)
+- Estados dos arquivos:
+  * Nao monitorados (untracked)
+  * Modifcado (modified)
+  * Preparado (staged)
+  * Consolidado (commited)
 --- 
 * Criando um clone total do repositorio remoto no local  
   * `git clone https://github.com/jrmartinho/teste_repo.git`  
@@ -62,14 +62,204 @@
 * `git add .`,`git commit -m "retornando ao commit num.commit"`,`git push` 
   
 --- 
-
 git remote add remote URL  
-Entre no Github inclua repo - nome e descrição, publico,  
+Entre no Github inclua repo - nome e descrição, publico,
+
+---
+**Lição Aprendida**
+
+Se `git remote -v ` aparecerem outros repositorios reveja a variável global e redefina se necessário 
+* `git config -l`
+* `git config --global remote.origin.url https://github.com/jrmartinho/teste_repo.git` 
 
 
+### Seção 4: Branching, Merge e Rebase
+
+#### Branching
+-----------
+git branch (qual branch estou)  
+git status
+
+git branch <nova_branch> (cria branch)  
+git branch -d <branch>  (apaga branch)
+
+git checkout <branch>  (muda para a branch)
+
+altere o arquivo  
+git add .  
+git commit -a  
+git push (apresenta erro por não existir a nova branch)  
+
+git push -u (--set-upstream origin <branch>  (cria e atualiza novaBranch no remoto)
+
+Os arquivos estão diferentes na master e novaBranch  
+
+git checkout master (muda para a branch master)  
+notepad arquivo (altere)  
+git add .  
+git diff  
+git commit  
+git push  
+
+Observar em Insights/network com ficam as branchs depois dos push
+
+#### Git Merge
+---  
+
+git checkout master  
+git merge novaBranch  
+
+editar os arquivos em conflito  
+git add .
+git commit  
+git push  
+
+Observar em Insights/network com ficam as branchs depois dos push
 
 
+#### Git Rebase
+---  
+git checkout -b branch2 (cria a branch e muda para branch2)  
 
+git checkout master  
+altera arquivos  
+git add .  
+git commit  
+git log  
+
+git checkout branch2  
+altera arquivos  
+git add .  
+git commit  
+git log  
+
+git rebase master
+
+notepad (edit) nos conflitos  
+
+git status  
+git add .  
+git rebase --continue  
+git log  
+git diff HEAD~1 HEAD  
+git diff HEAD~2 HEAD~1 (os commits se unificam)  
+
+
+#### Git Fetch
+---  
+
+Baixa as atualizações do remote porém não aplica elas no repositorio  
+pull = fetch + merge
+
+git fetch  
+git rebase  
+
+notepad nos conflitos  
+git add .  
+git rebase --continue (ate acabarem os conflitos)  
+
+git push
+
+
+#### Git Tag
+---  
+
+git tag tagname  
+git pull origin tagname  
+
+### Seção 5: Colaboração com Open Source
+
+#### Interfaces graficas 
+
+* Egit - Plugin p/Eclipse  
+* GitEye - Linux, W e Mac
+
+#### Estrelas
+* Dar estrelas e seguir
+ 
+#### Fork e issues (Questoes/Bug/Tarefas a serem resolvidas)
+* Fork copia de outro e depois pode devolver para integrar novamente
+* Issues Permite expor bug ou solicitação ao publico e depois das alterações/commit
+Fechar a issue com commit Close #Numero da issue
+
+#### Pull request e Workflow
+* Pull request - submissão para analise e integraçao a master 
+* Fiz o Pull request pelo site do github
+* Workflow - https://guides.github.com/introduction/flow/
+
+#### Verificando e aceitando a Pull request
+* git fetch origin pull/ID/head:Branching
+* git checkout Branching
+* git log
+* No site aceitar o merge com a master
+* git checkout master
+* git pull
+* _Editar o desejavel_
+* git status
+* git add .
+* git commit
+* git push
+
+### Seção 6: Alem do basico
+
+#### Git Ignore
+* criar arquivo .gitignore e incluir as exclusões
+* Configura os arquivos que devem ser ignorados pelo git, e não serão levados ao repositorio.
+
+#### Commit Amend
+Permite adicionar no mesmo commit anterior já feito outras alterações antes do push.
+* git commit --amend
+
+#### Stash
+Permite pular entre branchs sem efetuar commit e permite salvar as alteraçoes a parte  retornar com as alterações
+* altera algo na master e não commit
+* muda para a branch e se não divergir incorpora mudança
+* na branch sem mesmo alterar da commit
+* retorna para a master e a alteração nao aparece (mas foi editado nesta master)
+* ainda na master inclui outra linha diferentes
+* se tentar mudar para outra branch sem commit antes reclama.
+* usar o comando git stash, remove a alteração do arquivo e emplilha no stash
+* git stash list - mostra as alteraçoes empilhadas
+* mudo de branch, faço alterações e commit e retorno a master
+* na master faço o git stash pop tenho as alterações incorporados q estavam no stash
+
+#### Cherrypick e Blame
+Cherryplane - Incorpora um commit anterior a versão atualiza  
+Blame - Lista a alterações por linha e commits
+
+#### git bissect
+Localiza o commit onde ocorreu uma alteração
+
+* git bisect start
+* git bisect bad
+* git bisect good numcommit
+* pula para um commit e testa o arquivo com cat ou outra forma
+* git bisect bad
+* testa
+* git bisect bad
+* testa
+* se ok 
+* git bisect good
+* git bisect reset
+
+Exercicio - http://www.git-game
+
+#### GitHub Pages
+Cria pagina web para o repositorio
+
+#### GitHub Milestones
+Facilita acompanhar atualizacoes bugfix
+- https://guides.github.com/features/issues/  
+
+#### WebHooks
+Teste de programa/codigo
+
+#### GitKraken GUI
+Outra indicação de GUI para o GitHub
+
+https://gitkraken.com
+
+---
 ---
 ### Anexo A: Utilizando chave ssh para se conectar ao Github
 
@@ -115,7 +305,7 @@ We recommend every repository include a README, LICENSE, and .gitignore.
  Mercurial, or TFS project.  
 
 ---
-#### Anexo C: Markdown dicas:
+### Anexo C: Markdown dicas:
 [Ref: https://www.markdowntutorial.com](https://www.markdowntutorial.com)
 [Ref: https://www.markdownguide.org](https://www.markdownguide.org)  
 * Titulo H1 a H6 - \#, \##, ..., \######
