@@ -77,72 +77,72 @@ Se `git remote -v ` aparecerem outros repositorios reveja a variável global e r
 
 #### Branching
 -----------
-git branch (qual branch estou)  
-git status
+`git branch` (qual branch estou)  
+`git status`
 
-git branch <nova_branch> (cria branch)  
-git branch -d <branch>  (apaga branch)
+`git branch <nova_branch>` (cria branch)  
+`git branch -d <branch>`  (apaga branch)
 
-git checkout <branch>  (muda para a branch)
+`git checkout <branch>`  (muda para a branch)
 
 altere o arquivo  
-git add .  
-git commit -a  
-git push (apresenta erro por não existir a nova branch)  
+`git add .`  
+`git commit -a`  
+`git push` (apresenta erro por não existir a nova branch)  
 
-git push -u (--set-upstream origin <branch>  (cria e atualiza novaBranch no remoto)
+`git push -u (--set-upstream) origin <branch>`  (cria e atualiza novaBranch no remoto)
 
 Os arquivos estão diferentes na master e novaBranch  
 
-git checkout master (muda para a branch master)  
+`git checkout master` (muda para a branch master)  
 notepad arquivo (altere)  
-git add .  
-git diff  
-git commit  
-git push  
+`git add .`  
+`git diff`  
+`git commit`  
+`git push`  
 
 Observar em Insights/network com ficam as branchs depois dos push
 
 #### Git Merge
 ---  
 
-git checkout master  
-git merge novaBranch  
+`git checkout master`  
+`git merge novaBranch`  
 
 editar os arquivos em conflito  
-git add .
-git commit  
-git push  
+`git add .`  
+`git commit`  
+`git push`  
 
 Observar em Insights/network com ficam as branchs depois dos push
 
 
 #### Git Rebase
 ---  
-git checkout -b branch2 (cria a branch e muda para branch2)  
+`git checkout -b branch2` (cria a branch e muda para branch2)  
 
-git checkout master  
+`git checkout master`  
 altera arquivos  
-git add .  
-git commit  
-git log  
+`git add .`  
+`git commit`  
+`git log`  
 
-git checkout branch2  
+`git checkout branch2`  
 altera arquivos  
-git add .  
-git commit  
-git log  
+`git add .`  
+`git commit`  
+`git log`  
 
-git rebase master
+`git rebase master`
 
 notepad (edit) nos conflitos  
 
-git status  
-git add .  
-git rebase --continue  
-git log  
-git diff HEAD~1 HEAD  
-git diff HEAD~2 HEAD~1 (os commits se unificam)  
+`git status`  
+`git add .`  
+`git rebase --continue`  
+`git log`  
+`git diff HEAD~1 HEAD`  
+`git diff HEAD~2 HEAD~1` (os commits se unificam)  
 
 
 #### Git Fetch
@@ -151,21 +151,21 @@ git diff HEAD~2 HEAD~1 (os commits se unificam)
 Baixa as atualizações do remote porém não aplica elas no repositorio  
 pull = fetch + merge
 
-git fetch  
-git rebase  
+`git fetch`  
+`git rebase`  
 
 notepad nos conflitos  
-git add .  
-git rebase --continue (ate acabarem os conflitos)  
+`git add .`  
+`git rebase --continue` (ate acabarem os conflitos)  
 
-git push
+`git push`
 
 
 #### Git Tag
 ---  
 
-git tag tagname  
-git pull origin tagname  
+`git tag tagname`  
+`git pull origin tagname`  
 
 ### Seção 5: Colaboração com Open Source
 
@@ -208,7 +208,7 @@ Fechar a issue com commit Close #Numero da issue
 
 #### Commit Amend
 Permite adicionar no mesmo commit anterior já feito outras alterações antes do push.
-* git commit --amend
+* `git commit --amend`
 
 #### Stash
 Permite pular entre branchs sem efetuar commit e permite salvar as alteraçoes a parte  retornar com as alterações
@@ -219,9 +219,9 @@ Permite pular entre branchs sem efetuar commit e permite salvar as alteraçoes a
 * ainda na master inclui outra linha diferentes
 * se tentar mudar para outra branch sem commit antes reclama.
 * usar o comando git stash, remove a alteração do arquivo e emplilha no stash
-* git stash list - mostra as alteraçoes empilhadas
+* `git stash list` - mostra as alteraçoes empilhadas
 * mudo de branch, faço alterações e commit e retorno a master
-* na master faço o git stash pop tenho as alterações incorporados q estavam no stash
+* na master faço o `git stash pop` tenho as alterações incorporados q estavam no stash
 
 #### Cherrypick e Blame
 Cherryplane - Incorpora um commit anterior a versão atualiza  
